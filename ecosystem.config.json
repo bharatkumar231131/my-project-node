@@ -1,0 +1,29 @@
+{
+    "apps": [
+        {
+            "name": "appwise",
+            "instances": 1,
+            "autorestart": false,
+            "script": "node --env-file=.env ./index.js",
+            "cron_restart": "0 */6 * * *",
+            "watch": false,
+            "time": true,
+            "env": {
+                "PORT": 5000,
+                "CPU": 1,
+                "MULTER": "http://213.210.21.175:5000",
+                "DATABASE": "ecommers_appwise",
+                "DB_USERNAME": "ecommers_appwise",
+                "PASSWORD": "biYbCEajTtyxGDrE",
+                "HOST": "localhost",
+                "DBPORT": 3306,
+                "MAXIMUM_RETRY_COUNT": 10,
+                "RETRY_TIMEOUT": 10000,
+                "JWT_ACCESS_TOKEN_KEY": "dfghjklkljhdfsafhjoiuytreawarsfgh",
+                "JWT_REFRESH_TOKEN_KEY": "lkhgfydtsradtfyugihojiuytrezsdxf",
+                "JWT_ACCESS_EXPIRY": "1d",
+                "JWT_REFRESH_EXPIRY": "30d"
+            }
+        }
+    ]
+}
