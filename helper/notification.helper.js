@@ -5,7 +5,7 @@ import nodemailerSendgrid from "nodemailer-sendgrid";
 
 const transporter = nodemailer.createTransport(
     nodemailerSendgrid({
-        apikey:'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'
+        // apikey:'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'
     })
 );
 
